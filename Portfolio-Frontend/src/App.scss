@@ -5,3 +5,17 @@ $primary-color:yellow;
   font-family: ' Helvetica Neue' ;
   src: url('./assets/fonts/helvetica-neu.tff' )format('tff');
 }
+
+@font-face {
+  font-family: 'La-Bella-Aurore' ;
+  src: url('./assets/fonts/LaBellaAurore.woff2' )format('woff2');
+}
+
+@font-face {
+  font-family: ' Coolbetica' ;
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2' )format('woff2');
+}
+
+input,textarea{
+  font-family: 'Helvetica Neue';
+}
