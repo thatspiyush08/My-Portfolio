@@ -32,11 +32,11 @@ const Contact = () => {
         // Clear form fields after successful submission
         setFormData({ name: '', email: '', message: '' });
       } else {
-        alert('Still Working on this Feature Thanks For Your Patience!\n You may mail to piyush22354@iiitd.ac.in for now!');
+        alert('Still Working on this Feature Thanks For Your Patience!!\nYou may mail to piyush22354@iiitd.ac.in for now!');
       }
     } catch (error) {
       console.error('Error sending email:', error);
-      alert('Still Working on this Feature Thanks For Your Patience!\n You may mail to piyush22354@iiitd.ac.in for now!');
+      alert('Still Working on this Feature Thanks For Your Patience!!\nYou may mail to piyush22354@iiitd.ac.in for now!');
     }
   };
 
