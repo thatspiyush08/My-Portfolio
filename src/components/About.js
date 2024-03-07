@@ -53,7 +53,7 @@ const About = () => {
           <Link to='contact' activeClass='active' spy={true} smooth={true}>
               <button className='btn btn-lg'>Contact Me</button>
               </Link>
-              <a href='www.google.com' className='text-gradient btn-link'>
+              <a href='https://my-portfolio-alpha-five-27.vercel.app/' className='text-gradient btn-link'>
                 My Portfolio
               </a>
             </div>

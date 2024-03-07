@@ -32,7 +32,7 @@ const Banner = () => {
               <Link to='contact' activeClass='active' spy={true} smooth={true}>
               <button className='btn btn-lg'>Contact Me</button>
               </Link>
-              <a href='www.google.com' className='text-gradient btn-link'>My Portfolio</a>
+              <a href='https://my-portfolio-alpha-five-27.vercel.app/' className='text-gradient btn-link'>My Portfolio</a>
             </motion.div>
             <motion.div  variants={fadeIn('up',0.7)} initial='hidden' whileInView={'show'} viewport={{once:false,amount:0.7}} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
               <a href='https://github.com/thatspiyush08'>
