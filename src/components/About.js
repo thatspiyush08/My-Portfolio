@@ -3,6 +3,7 @@ import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import { Link } from 'react-scroll';
 
 const About = () => {
   const [ref,inView]=useInView({
@@ -16,11 +17,11 @@ const About = () => {
         <motion.div variants={fadeIn('left',0.5)} initial='hidden' whileInView={"show"} viewport={{once:false,amount:0.3}} className='flex-1'>
           <h2 className='h2 text-accent'>About Me!!</h2>
           <h3 className='h3 mb-4'>
-            My name is Piyush Narula I am Currently a Sophomore.
+            My name is Piyush Narula.<br></br> I am Currently a Sophomore.<br></br>
             I am Persuing my B.Tech in Computer Science and Engineering with Ai From IIITD.
           </h3>
           <p className='mb-6'>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <br></br>💬 Let's talk about tech.<br></br>⚡️ Hope to collaborate soon.
           </p>
           <div>
             _
@@ -49,7 +50,9 @@ const About = () => {
             
           </div>
           <div className='flex gap-x-8 items-center'>
+          <Link to='contact' activeClass='active' spy={true} smooth={true}>
               <button className='btn btn-lg'>Contact Me</button>
+              </Link>
               <a href='www.google.com' className='text-gradient btn-link'>
                 My Portfolio
               </a>

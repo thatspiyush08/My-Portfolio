@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import { Link } from 'react-scroll';
 
 const Banner = () => {
   return (
@@ -25,10 +26,12 @@ const Banner = () => {
               ></TypeAnimation>
             </motion.div>
             <motion.p  variants={fadeIn('up',0.5)} initial='hidden' whileInView={'show'} viewport={{once:false,amount:0.7}} className='mb-8 max-w-lg mx-auto lg:mx-0'>
-              lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <br></br>✨️ I am currently a sophormore in CSAI at IIITD.<br></br> 🤝 I'm open for collaboration on C++, ML , Javascript and NodeJS <br></br>👩‍🎓 I'm currently learning React.
             </motion.p>
             <motion.div  variants={fadeIn('up',0.6)} initial='hidden' whileInView={'show'} viewport={{once:false,amount:0.7}} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+              <Link to='contact' activeClass='active' spy={true} smooth={true}>
               <button className='btn btn-lg'>Contact Me</button>
+              </Link>
               <a href='www.google.com' className='text-gradient btn-link'>My Portfolio</a>
             </motion.div>
             <motion.div  variants={fadeIn('up',0.7)} initial='hidden' whileInView={'show'} viewport={{once:false,amount:0.7}} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
