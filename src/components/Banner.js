@@ -15,9 +15,9 @@ const Banner = () => {
               Piyush <span>Narula</span>
             </motion.h1>
             <motion.div variants={fadeIn('up',0.4)} initial='hidden' whileInView={'show'} viewport={{once:false,amount:0.7}} className='mr-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
-              <span className='text-white mr-4'>I am a</span>
+              <span className='text-white mr-4'>I am </span>
               <TypeAnimation
-                sequence={['Web Developer', 2000, 'AI Researcher', 2000, 'Tech Enthusiast', 2000]}
+                sequence={['A Web Developer', 2000, 'An AI Researcher', 2000, 'A Tech Enthusiast', 2000]}
                 speed={50}
                 repeat={Infinity}
                 className='text-accent'
