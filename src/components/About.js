@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { Link } from 'react-scroll';
+import './Banner.css'
 
 const About = () => {
   const [ref,inView]=useInView({
@@ -49,6 +50,7 @@ const About = () => {
             </div>
             
           </div>
+          
           <div className='flex gap-x-8 items-center'>
           <Link to='contact' activeClass='active' spy={true} smooth={true}>
               <button className='btn btn-lg'>Contact Me</button>
@@ -56,10 +58,14 @@ const About = () => {
               <a href='https://my-portfolio-alpha-five-27.vercel.app/' className='text-gradient btn-link'>
                 My Portfolio
               </a>
+              
             </div>
+            
         </motion.div>
       </div>
+      
     </div>
+    
   </section>;
 };
 

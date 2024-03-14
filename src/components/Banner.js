@@ -5,6 +5,8 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { Link } from 'react-scroll';
+import './Banner.css';
+
 
 const Banner = () => {
   return (
@@ -33,6 +35,7 @@ const Banner = () => {
               <button className='btn btn-lg'>Contact Me</button>
               </Link>
               <a href='https://my-portfolio-alpha-five-27.vercel.app/' className='text-gradient btn-link'>My Portfolio</a>
+              
             </motion.div>
             <motion.div  variants={fadeIn('up',0.7)} initial='hidden' whileInView={'show'} viewport={{once:false,amount:0.7}} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
               <a href='https://github.com/thatspiyush08'>
@@ -48,8 +51,18 @@ const Banner = () => {
           </div>
           <motion.div  variants={fadeIn('down',0.5)} initial='hidden' whileInView={'show'}  className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] '>
             <img src={Image} style={{ width: '400px', height: '500px', borderRadius: '40%' }} />
+            <div className="right-part">
+            <div className="bg-line">
+              <img src="https://www.yudiz.com/codepen/photography-banner/wave.svg" alt="Line" />
+              <img src="https://www.yudiz.com/codepen/photography-banner/wave.svg" alt="Line" />
+            </div>
+            <div className="bg-dash-circle">
+              <img src="https://www.yudiz.com/codepen/photography-banner/dash-circle.svg" alt="dash-circle" />
+            </div>
+            </div>
           </motion.div>
         </div>
+        
       </div>
     </section>
   );

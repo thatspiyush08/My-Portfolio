@@ -89,8 +89,11 @@ const Contact = () => {
             />
             <button type='submit' className='btn btn-lg'>Send Message</button>
           </motion.form>
+          
         </div>
+        
       </div>
+      
     </section>
   );
 };
